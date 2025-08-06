@@ -46,7 +46,9 @@ declare const ExpensModel: mongoose.Model<{
     health?: number | null;
     grocery?: number | null;
     education?: number | null;
-}, {}, mongoose.DefaultSchemaOptions> & {
+}, {}, {
+    strict: false;
+}> & {
     id?: mongoose.Types.ObjectId | null;
     electronic?: number | null;
     cloth?: number | null;
@@ -57,7 +59,9 @@ declare const ExpensModel: mongoose.Model<{
     _id: mongoose.Types.ObjectId;
 } & {
     __v: number;
-}, mongoose.Schema<any, mongoose.Model<any, any, any, any, any, any>, {}, {}, {}, {}, mongoose.DefaultSchemaOptions, {
+}, mongoose.Schema<any, mongoose.Model<any, any, any, any, any, any>, {}, {}, {}, {}, {
+    strict: false;
+}, {
     id?: mongoose.Types.ObjectId | null;
     electronic?: number | null;
     cloth?: number | null;
@@ -71,7 +75,9 @@ declare const ExpensModel: mongoose.Model<{
     health?: number | null;
     grocery?: number | null;
     education?: number | null;
-}>, {}, mongoose.ResolveSchemaOptions<mongoose.DefaultSchemaOptions>> & mongoose.FlatRecord<{
+}>, {}, mongoose.ResolveSchemaOptions<{
+    strict: false;
+}>> & mongoose.FlatRecord<{
     id?: mongoose.Types.ObjectId | null;
     electronic?: number | null;
     cloth?: number | null;

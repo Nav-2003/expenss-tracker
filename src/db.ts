@@ -13,9 +13,8 @@ const expense=new Schema({
     cloth:Number||null,
     health:Number||null,
     grocery:Number||null,
-    education:Number||null
-
-})
+    education:Number||null   
+},{strict:false})
 
 const UserModel=mongoose.model('users',user);
 const ExpensModel=mongoose.model('expenses',expense);

@@ -12,7 +12,7 @@ const expense = new Schema({
     health: Number || null,
     grocery: Number || null,
     education: Number || null
-});
+}, { strict: false });
 const UserModel = mongoose.model('users', user);
 const ExpensModel = mongoose.model('expenses', expense);
 export { UserModel, ExpensModel };
